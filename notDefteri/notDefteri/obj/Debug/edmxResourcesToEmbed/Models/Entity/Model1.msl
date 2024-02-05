@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="notDefteriModelStoreContainer" CdmEntityContainer="notDefteriEntities">
+    <EntitySetMapping Name="notTablosu">
+      <EntityTypeMapping TypeName="notDefteriModel.notTablosu">
+        <MappingFragment StoreEntitySet="notTablosu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="notAdi" ColumnName="notAdi" />
+          <ScalarProperty Name="notTarih" ColumnName="notTarih" />
+          <ScalarProperty Name="not" ColumnName="not" />
+          <ScalarProperty Name="mesajin" ColumnName="mesajin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

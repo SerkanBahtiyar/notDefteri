@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="notDefteriModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="notTablosu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="notAdi" Type="varchar" MaxLength="50" />
+    <Property Name="notTarih" Type="varchar" MaxLength="50" />
+    <Property Name="not" Type="varchar" MaxLength="1500" />
+    <Property Name="mesajin" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityContainer Name="notDefteriModelStoreContainer">
+    <EntitySet Name="notTablosu" EntityType="Self.notTablosu" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
